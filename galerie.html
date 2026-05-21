@@ -1,0 +1,339 @@
+<!Doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/global.css">
+    <title>Saint Theophile</title>
+  </head>
+  <body>
+ <div class="containner-fuid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow  border border-primay  border-4 justify-content-center align-items-center"> 
+      <div class="col d-flex align-items-center ">
+        <img src="images/logo.jpg" class = "img-fluid" class="me-2" width="50px" height="50px">
+        <a class="navbar-brand fw-bold d-md-block" href="index.html">   COLLEGE SAINT THEOPHILE</a>
+      </div>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="apropos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="login_eleve.php">Connexion-élève</a></li>
+          <li class="nav-item"><a class="nav-link active" href="formulaire_inscription.php">Inscription</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galerie.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.php">Contact</a></li>
+        </ul>
+      </div>
+    </nav>   
+  </div><br><br><br><br>
+ 
+    <header>
+      <div class="header-bg text-center" id="haut-de-page">
+        <h1 class="display-4 fw-bold">Bienvenue dans notre Galerie</h1>
+        <p class="lead text-muted mx-auto">
+          Découvrez en images le cadre de vie, nos infrastructures modernes et
+          l'épanouissement de nos élèves au coeur de notre établissement.
+        </p>
+      </div>
+    </header>
+
+    <div class="css-slider">
+      <div class="slider-wrapper">
+        <div id="slide-1" class="slide">
+          <img src="images/cour2.jpg" alt="Bâtiment principal" />
+          <div class="caption">
+            <h2>Bienvenue au Collège Saint Théophile</h2>
+            <p>L'excellence au cœur de l'education.</p>
+          </div>
+        </div>
+
+        <div id="slide-2" class="slide">
+          <img src="images/b1.jpg" alt="Cour intérieure" />
+          <div class="caption">
+            <h2>Nos Infrastructures</h2>
+            <p>Un cadre idéal pour l'épanouissement des élèves.</p>
+          </div>
+        </div>
+
+        <div id="slide-3" class="slide">
+          <img src="images/cour2.jpg" alt="Espace naturel" />
+          <div class="caption">
+            <h2>Environnement Naturel</h2>
+            <p>Un espace vert pour favoriser l'apprentissage.</p>
+          </div>
+        </div>
+        <div id="slide-4" class="slide">
+          <img src="images/infirmeri.jpg" alt="Infirmeri" />
+          <div class="caption">
+            <h2>Santé et Accopagnement</h2>
+            <p>
+              Une infirmerie dédiée pour assurer le suivi et les soins de nos
+              élèves.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+      </div>
+    </div>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="text-center mb-4 section-title">
+          Nos Espaces d'Apprentissage
+        </h2>
+        <div class="row row-cols-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="image gallery-card">
+              <img
+                src="images/s1.jpg"
+                class="img-fluid rounded shadow"
+                alt="Salle de classe"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="image gallery-card">
+              <img
+                src="images/s2.jpg"
+                class="img-fluid rounded shadow"
+                alt="Salle informatique"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="image gallery-card">
+              <img
+                src="images/s3.jpg"
+                class="img-fluid rounded shadow"
+                alt="Labo science"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="image gallery-card">
+              <img
+                src="images/s5.jpg"
+                class="img-fluid rounded shadow"
+                alt="Salle informatique"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-2 mt-4 align-items-center"
+        >
+          <div class="col">
+            <p class="text-secondary">
+              Nos salles de classe sont dotées d'équipements modernes et d'une
+              bibliothèque richement fournie pour offrir un environnement
+              d'étude optimal. Chaque espace est pensé pour stimuler la
+              curiosité, la concentration et la créativité de chaque apprenant.
+            </p>
+          </div>
+          <div class="image col text-center">
+            <img
+              src="images/s4.jpg"
+              class="img-fluid rounded-pill shadow-sm"
+              style="max-height: 250px"
+              alt="Salle informatique vue vers bibliothèque"
+            />
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-4" />
+      <section class="my-2 text-center">
+        <h2 class="text-center mb-4 section-title">Photos</h2>
+        <div class="container">
+          <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/t1.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Milieu terrain de baskett"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/t2.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="vue terrain de baskett"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/t3.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Espace de divertissement"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/t4.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Terrain de foote"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/entré.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Entre principal vue interrieure"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/t5.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Batiment administratif"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/infirmeri.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Infirmeri"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="image gallery-card mx-3">
+                <img
+                  src="images/s6.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Batiment Salle de classe"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="my-4" />
+      <section class="mb-5">
+        <h2 class="text-center mb-4 section-title">
+          Vie Scolaire et Épanouissement
+        </h2>
+        <div class="row g-4">
+          <div class="col">
+            <img
+              class="img-fluid rounded shadow w-100"
+              style="object-fit: cover; height: 300px"
+              src="images/t6.jpg"
+              alt="terrain de baskett"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <img
+              src="images/cour2.jpg"
+              class="img-fluid rounded shadow w-100"
+              style="object-fit: cover; height: 400px"
+              alt="Batiment salle de classe"
+            />
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="description card h-100 text-white p-4 d-flex align-items-center justify-content-center text-center border-0 shadow"
+            >
+              <h3>Sports et Loisirs</h3>
+              <p>
+                Nous disposons d'infrastructures sportives entretenues
+                permettant la pratique de diverses disciplines et l'organisation
+                de compétitions, favorisant l'esprit d'équipe et la détente.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 mt-4">
+            <img
+              src="images/t7.jpg"
+              class="img-fluid rounded shadow w-100"
+              style="height: 450px; object-fit: cover"
+              alt="Terrains sportives"
+            />
+          </div>
+          <div class="col-12 mt-4">
+            <img
+              src="images/t8.jpg"
+              class="img-fluid rounded shadow w-100"
+              style="height: 450px; object-fit: cover"
+              alt="Nos professeurs"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row row-cols-2 row-cols-md-2">
+          <div class="col mb-4">
+            <h5 class="fw-bold mb-4 mx-3">CONTACT</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <img src="images/contacte.png" height="20" class="me-2" /><a href="tel:+243 831 966 097">+243 831 966 097</a>
+              </li>
+              <li class="mb-2">
+                <img src="images/WH1.png" height="20" class="me-2" /> <a href="tel:+243 831 966 097">+243 831 966 097</a>
+              </li>
+              <li class="mb-2">
+                <img src="images/FB1.png" height="20" class="me-2" /> <a href="https://web.facebook.com/theophiliens/?_rdc=1&_rdr">Saint Théophile</a>
+              </li>
+              <li class="mb-2">
+                <img src="images/localisation.png" height="20" class="me-2" /> <a href="https://www.google.fr/maps/place/College+Saint+Theophile+de+Lemba/@-4.3855857,15.3341575,17z/data=!4m6!3m5!1s0x1a6a374186ffffff:0x3ad499ca73f5d5cd!8m2!3d-4.3855857!4d15.3341575!16s%2Fg%2F11k40jmzq2?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D">Adresse</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-4 text-end">
+            <h5 class="fw-bold mb-4">LIENS UTILES</h5>
+            <p>
+              <a href="index.html" class="text-white text-decoration-none">Accueil</a>
+            </p>
+            <p>
+              <a href="formulaire_inscription.php" class="text-white text-decoration-none">Inscriptions</a>
+            </p>
+          </div>
+        </div>
+        <hr class="bg-secondary" />
+        <div class="text-center pt-2">
+          <p class="mb-0 small">
+            Tous droits réservés &copy; 2026
+            <strong>Collège Saint Théophile</strong> | Développé par
+            <strong>Les travailleur</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+/* style2.css – page espace élève (navbar) */
+
+.navbar {
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.header {
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+}
