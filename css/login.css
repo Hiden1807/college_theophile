@@ -1,0 +1,103 @@
+/* login.css – spécifique élève */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(sylain.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    margin: 15px 10px;
+    background-color: rgb(135, 206, 235, 0.4);
+    border: 2px solid rgba(255, 225, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 35px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 225, 0.8);
+    color: #fff;
+    padding-right: 40px;
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+.input-box i {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 20px;
+    top: 50%;
+    color: #fff;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.remember-forgot a, .register-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.remember-forgot a:hover, .register-link a:hover {
+    text-decoration: underline;
+}
+
+.Login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    transition: 0.2s;
+}
+.Login-btn:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+.alert {
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 14px;
+}

@@ -1,0 +1,88 @@
+/* login_admi.css – version propre */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/entree.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(2px);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 40px -12px rgba(0,0,0,0.3);
+    padding: 30px;
+    width: 380px;
+    text-align: center;
+}
+.login-container h2 {
+    color: #0a58ca;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.defilement {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.defilement p {
+    white-space: nowrap;
+    display: inline-block;
+    animation: glissement 10s linear infinite;
+    color: #555;
+}
+@keyframes glissement {
+    0% { transform: translateX(100%);}
+    100% { transform: translateX(-100%);}
+}
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: #333;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+}
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #0a58ca, #0d6efd);
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.btn:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #0b5ed7, #0a58ca);
+}
+.alert {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin: 1rem 0;
+}
+.remember-forgot a {
+    color: #0a58ca;
+    text-decoration: none;
+}

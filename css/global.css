@@ -1,0 +1,111 @@
+/* ============================================
+   GLOBAL.CSS – version professionnelle
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-heading: 'Poppins', var(--font-body);
+    --color-primary: #0a58ca;
+    --color-primary-dark: #0a3d62;
+    --color-secondary: #6c757d;
+    --color-success: #198754;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+    --border-radius-sm: 0.5rem;
+    --border-radius: 1rem;
+    --border-radius-lg: 2rem;
+    --box-shadow-sm: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    --transition: all 0.2s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: #f4f7fc;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .card-title, .btn, legend {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+a { text-decoration: none; transition: var(--transition); }
+a:hover { color: var(--color-primary-dark); }
+
+.btn {
+    border-radius: var(--border-radius-lg);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow-sm);
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-sm);
+    transition: var(--transition);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+input, select, textarea, .form-control, .form-select {
+    border-radius: var(--border-radius-sm);
+    border: 1px solid #ced4da;
+    transition: var(--transition);
+}
+input:focus, select:focus, textarea:focus, .form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+    outline: none;
+}
+
+.table {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-sm);
+}
+.table thead th {
+    background-color: var(--color-light);
+    border-bottom: 2px solid #45474a;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+.table tbody tr:hover {
+    background-color: #f1f9ff;
+}
+
+.alert {
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    body { font-size: 0.95rem; }
+    h1 { font-size: 1.8rem; }
+    .container { padding-left: 1rem; padding-right: 1rem; }
+    .table { font-size: 0.8rem; }
+}

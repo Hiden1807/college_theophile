@@ -1,0 +1,97 @@
+/* styles.css – galerie (slider, zoom) */
+
+.css-slider {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caption {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(4px);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+.caption h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+.slider-nav a {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+.slider-wrapper::-webkit-scrollbar {
+    display: none;
+}
+/* Effet zoom */
+.gallery-card, .image {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+}
+.gallery-card img, .image img {
+    transition: transform 0.3s ease-in-out !important;
+    display: block;
+    width: 100%;
+}
+.gallery-card img:hover, .image img:hover {
+    transform: scale(1.15) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    z-index: 5;
+    cursor: pointer;
+}
+/* Autres */
+header p {
+    max-width: 800px;
+}
+.description {
+    background-color: skyblue;
+}
+header h1, footer h5 {
+    color: skyblue;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,107 @@
+/* style.css – page d'accueil (hero, cartes, animations) */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+    scroll-behavior: smooth;
+}
+.container img {
+    margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+    min-height: 85vh;
+    height: auto;
+    padding: 6rem 1rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/entree.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+.hero-content h1 {
+    animation: slideDown 1s ease forwards;
+}
+.hero-content p {
+    animation: fadeIn 2s ease forwards;
+}
+.hero-content a.btn {
+    transition: all 0.3s ease;
+}
+.hero-content a.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-50px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+/* Cartes */
+.hover-card {
+    border: none;
+    transition: all 0.25s ease;
+}
+.hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+}
+.hover-card img {
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+}
+
+/* Titres de section */
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--color-primary);
+    border-radius: 3px;
+}
+
+/* Galerie carousel */
+#gallery img {
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* CTA */
+.cta a.btn {
+    transition: all 0.3s ease;
+}
+.cta a.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer et navbar */
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    color: #1c7ed6;
+}
+.navbar {
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+div{
+  background-color: blanchedalmond;
+}
+
+/* Ajustements mobiles */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .table {
+        font-size: 0.8rem;
+    }
+    .stat-box {
+        margin-bottom: 1rem;
+    }
+    .search {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
